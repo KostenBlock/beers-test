@@ -1,0 +1,24 @@
+@import "styles/global/colors";
+@import "styles/global/sizes";
+
+.beer__card {
+  align-content: start;
+  padding: 10px;
+  border-radius: $medium-radius;
+  border: 1px solid $gray-90;
+  cursor: pointer;
+  *{ cursor: pointer; };
+
+  .beer__picture {
+    height: 300px;
+    width: 100%;
+  };
+
+  .beer__name {
+
+  };
+
+  .beer__description {
+
+  };
+}

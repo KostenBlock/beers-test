@@ -1,0 +1,46 @@
+@import "styles/global/colors";
+@import "styles/global/sizes";
+
+.input__container {
+	align-content: start;
+	gap: 8px;
+}
+
+.label__element {
+	font-size: 14px;
+	padding-left: 8px;
+}
+
+.input {
+	background-image: none;
+	background-color: transparent;
+	box-shadow: none;
+	border: 1px solid $gray-90;
+	border-radius: $light-radius;
+	height: 56px;
+	width: 100%;
+	-moz-outline-radius: 50px;
+	transition: $time;
+	padding-left: 8px;
+	font-size: 14px;
+	appearance: none;
+
+	&:focus {
+		border: 1px solid $black-90;
+		outline: none;
+	}
+}
+
+.disabled__component {
+	cursor: no-drop;
+	.label__element {
+		color: $gray-90;
+	}
+
+	.input {
+		cursor: no-drop;
+		background-color: $gray-30;
+		border-color: $gray-30;
+		color: $gray-90;
+	}
+}

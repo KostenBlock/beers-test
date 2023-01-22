@@ -1,0 +1,150 @@
+@import "/styles/global/sizes.scss";
+@import "/styles/global/colors.scss";
+@import "/styles/global/fonts.scss";
+
+// Общие стили
+.font-medium {
+	font-family: "TTNorms-Medium", Arial, Helvetica, sans-serif;
+}
+
+.font-bold {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+}
+
+.font-light {
+	font-family: "TTNorms-Light", Arial, Helvetica, sans-serif;
+}
+
+.font-regular {
+	font-family: "TTNorms", Arial, Helvetica, sans-serif;
+}
+
+.fixed-spaces {
+	white-space: pre-line;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.start-text {
+	text-align: start;
+}
+
+.end-text {
+	text-align: end;
+}
+
+// Главный экран
+.main-screen__header {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+	font-size: 55px;
+	line-height: 63px;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+.main-screen__header-2 {
+	font-size: 30px;
+	line-height: 38px;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+.main-screen__address-text {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	line-height: 33px;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+// Блоки
+.block__header-1 {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	line-height: 48px;
+	color: $black-90;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+.block__header-2 {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 38px;
+	color: $black-90;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+.block__header-3 {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: $black-90;
+}
+
+.block__regular-text {
+	font-size: 18px;
+	line-height: 26px;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	@media screen and (max-width: $mobile) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+// кнопки
+.button__regular-text {
+	font-family: "TTNorms-Bold", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.text-gray {
+	color: $gray-110;
+};
+
+.text-red {
+	color: $red-10;
+};
+
+.text-uppercase {
+	text-transform: uppercase;
+};

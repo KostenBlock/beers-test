@@ -1,0 +1,36 @@
+@import "styles/global/colors";
+@import "styles/global/sizes";
+
+.button__default {
+  outline: none;
+  border-radius: $light-radius;
+  background-color: $red-10;
+  color: $white-100;
+  border: 1px solid $gray-90;
+  width: 100%;
+  height: 56px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(74, 67, 67, 0.3);
+  }
+
+  &:focus {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  &:disabled {
+    transform: none;
+    box-shadow: none;
+    cursor: no-drop !important;
+  }
+}
+
+.button__active {
+  background-color: $white-100;
+  color: $black-90;
+  border: 1px solid $black-90;
+}

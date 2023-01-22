@@ -1,0 +1,32 @@
+@import "styles/global/template";
+
+.wrapper {
+  .content {
+    padding: 100px 0;
+
+    .beers__container {
+      grid-template-columns: repeat(4, 1fr);
+    };
+
+    .pages {
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+
+      .page {
+        display: grid;
+        place-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      };
+
+      .active {
+        background-color: $black-90;
+        span {
+          color: $white-100;
+        };
+      };
+    };
+  };
+};

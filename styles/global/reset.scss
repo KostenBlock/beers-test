@@ -1,0 +1,30 @@
+button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+ul {
+	list-style-type: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #333;
+	font-family: "TTNorms", Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+	cursor: default;
+	font-variant-ligatures: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+input,
+textarea {
+	appearance: none;
+}
