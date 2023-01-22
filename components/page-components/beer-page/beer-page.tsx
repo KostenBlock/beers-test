@@ -2,6 +2,8 @@ import axios from "axios";
 
 import { useState, useEffect } from "react";
 
+import Image from "next/image";
+
 import classes from "./beer-page.module.scss";
 import PlainLoader from "~/components/ui-components/ui-components/loaders/plain-loader";
 
@@ -48,10 +50,14 @@ export default function BeerPage({ id }: Props) {
             <div className={`${classes.content}`}>
                 <div className={`${classes.beer__container} column gap-30`}>
                     <div className={`${classes.beer__image}`}>
-                        <img
-                            src={beerData.image_url}
+                        <Image
+                            src={beerData.image_url || 'https://images.punkapi.com/v2/2.png'}
                             alt={beerData.name}
-                            className={`contain-image`}
+                            objectFit={'contain'}
+                            layout={'fill'}
+                            blurDataURL={beerData.image_url || 'https://images.punkapi.com/v2/2.png'}
+                            placeholder={"blur"}
+                            quality={90}
                         />
                     </div>
                     <div className={`row gap-20`}>

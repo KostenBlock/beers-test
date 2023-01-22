@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import classes from "./beer-card.module.scss";
 
@@ -15,10 +16,14 @@ export default function BeerCard({ id, name, description, image_url }: BeerI) {
             className={`${classes.beer__card} row gap-10`}
         >
             <div className={`${classes.beer__picture}`}>
-                <img
-                    src={image_url}
+                <Image
+                    src={image_url || 'https://images.punkapi.com/v2/2.png'}
                     alt={name}
-                    className={`contain-image`}
+                    objectFit={'contain'}
+                    layout={'fill'}
+                    blurDataURL={image_url || 'https://images.punkapi.com/v2/2.png'}
+                    placeholder={"blur"}
+                    quality={90}
                 />
             </div>
             <span className={`block__header-3`}>{name}</span>

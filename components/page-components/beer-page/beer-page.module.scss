@@ -10,6 +10,7 @@
       align-items: start;
 
       .beer__image {
+        position: relative;
         height: 500px;
         width: 100%;
         border-radius: $medium-radius;
