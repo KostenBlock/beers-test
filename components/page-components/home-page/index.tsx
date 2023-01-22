@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "~/store/hooks";
 import { getBeers, selectBeers, setState } from "~/store/reducers/beers.slice";
 
@@ -6,6 +6,7 @@ import classes from "./home-page.module.scss";
 import BeerCard from "./beer-card";
 import TextInput from "~/components/ui-components/ui-components/inputs/text-input";
 import PlainLoader from "~/components/ui-components/ui-components/loaders/plain-loader";
+import PlainButton from "~/components/ui-components/ui-components/buttons/plain-button";
 
 export default function HomePage() {
     const dispatch = useAppDispatch();
@@ -50,6 +51,12 @@ export default function HomePage() {
                         dispatch(setState({ activePage: 1, search: value }));
                     }}
                 />
+                <PlainButton
+                    clickEvent={() => dispatch(setState({ search: '' }))}
+                    className={`${classes.button__clear}`}
+                >
+                    Очистить поиск
+                </PlainButton>
                 {!isPending
                     ? <div className={`row gap-30`}>
                         <h1 className={`block__header-1`}>Пиво</h1>

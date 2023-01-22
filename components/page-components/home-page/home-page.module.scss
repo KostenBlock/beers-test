@@ -4,6 +4,10 @@
   .content {
     padding: 100px 0;
 
+    .button__clear {
+      max-width: 300px;
+    };
+
     .beers__container {
       grid-template-columns: repeat(4, 1fr);
     };
